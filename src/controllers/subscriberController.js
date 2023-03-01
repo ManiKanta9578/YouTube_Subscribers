@@ -40,7 +40,7 @@ const deleteSubscriber = async (req,res) => {
         // to validate a string for correct MongoDB ID. 
         //if not valid returns the status code 404 & show error message
         if(!mongoose.Types.ObjectId.isValid(id)) {
-            return res.status(404).json({error : "No such id found"})
+            return res.status(400).json({error : "No such id found"})
         }
 
         const subscribers = await subscriber.findOneAndDelete({ _id : id});
@@ -65,7 +65,7 @@ const getSubscriber = async (req,res) => {
         // to validate a string for correct MongoDB ID. 
         //if not valid returns the status code 404 & show error message
         if(!mongoose.Types.ObjectId.isValid(id)) {
-            return res.status(404).json({ error : "No such scuscriber found with this id"})
+            return res.status(400).json({ error : "No such scuscriber found with this id"})
         }
 
         const subscribers = await subscriber.findById(id).select("-__v");
@@ -103,7 +103,7 @@ const updateSubscriber = async (req,res) => {
         const { id } = req.params;
         // check for valid Id, if not valid returns status 404 with error message
         if (!mongoose.Types.ObjectId.isValid(id)) {
-            return res.status(404).json({ error: "No such scuscriber found with this id" });
+            return res.status(400).json({ error: "No such scuscriber found with this id" });
         }
         // update subscriber for particular id
         const subscribers = await subscriber.findOneAndUpdate({ _id : id },{
