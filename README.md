@@ -40,7 +40,7 @@ To run this project, you will need to add the below following environment variab
 + DATABASE_URL
 
 ## Routes
-GET http://localhost:3000/subscribers
+### GET `http://localhost:3000/subscribers`
 
 This request returns list of all subscribers with respect to  its _id, name, subscribed channel and subscribed date and time.
 
