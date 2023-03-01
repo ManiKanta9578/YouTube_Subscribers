@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-27T13:30:02.069Z",
+    "end": "2023-02-27T13:30:02.107Z",
+    "duration": 38,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8e37ac34-3155-49b4-af46-3a42e852e8b9",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "43453bf8-3d22-4286-a980-4d32a73ffeff",
+          "title": "/Test for home route",
+          "fullFile": "E:\\youtube_subscribers\\__tests__\\Route.test.js",
+          "file": "\\__tests__\\Route.test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should get default route",
+              "fullTitle": "/Test for home route should get default route",
+              "timedOut": false,
+              "duration": 10,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "chai.request(server).get(\"/\").end( (err,res) => {\n    res.should.have.status(200);\n    res.body.should.be.a(\"object\");\n    const greeting = res.body.greeting;\n    expect(greeting).to.be.eq(\"Hello, I am ManiKanta Kotni\");\n} );\ndone();",
+              "err": {},
+              "uuid": "ca85cd9b-4a86-4438-a32c-764f0083f3a6",
+              "parentUUID": "43453bf8-3d22-4286-a980-4d32a73ffeff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ca85cd9b-4a86-4438-a32c-764f0083f3a6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
