@@ -9,12 +9,8 @@ The main purpose of this project is to provide a starting point for building a l
 ## Prerequisites:  
 Please install MongoDB in your machine if you have not done already. Checkout the official MogngoDB installation manual for any help with the installation.
 
-
-
 <h2>Project Live <a href="https://youtube-subscribers-livid.vercel.app/"> Click Here </a> </h2>
   
-  
- 
  <br>
  </br>
 
@@ -37,6 +33,11 @@ $ cd youtube_subscribers
 $ npm install
 $ npm start
 ```
+
+## Environment Variables
+To run this project, you will need to add the following environment variables to your .env file
++ PORT
++ DATABASE_URL
 
 ## Routes
 ### GET `http://localhost:3000/subscribers`
