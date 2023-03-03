@@ -17,15 +17,15 @@ app.get('/', (req,res) => {
         routes : [
             {
                 route: "/subscribers",
-                response: "Response with an array subscribers(an Object)",
+                response: "Response with an array all subscribers",
             },
             {
                 route : "/subscribers/names",
-                response : "Response with an array subscribers(an object with only two fields name and subscribed channel)"
+                response : "Response with an array all subscribers(with only two fields name and subscribed channel)"
             },
             {
                 route : "/subscriber/:id",
-                response : "Response with a subscriber(an object) with given id response with status code 400 and error message({message : error.message}) if id does not match",
+                response : "Response with a subscriber  with given id response with status code 400 and error message, if id does not match",
             }
         ]
     });
