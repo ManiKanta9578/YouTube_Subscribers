@@ -25,7 +25,7 @@ app.get('/', (req,res) => {
             },
             {
                 route : "/subscriber/:id",
-                response : "Response with a subscriber  with given id response with status code 400 and error message, if id does not match",
+                response : "Response with a subscriber with given id response with status code 400 and error message, if id does not match",
             }
         ]
     });
