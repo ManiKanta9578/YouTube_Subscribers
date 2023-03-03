@@ -1,9 +1,10 @@
 const express = require('express')
+//express app
 const app = express();
-
+//importing from subscriberRoute 
 const subscriberRoute = require("./routes/subscriberRoutes")
 
-//middleware
+//middleware 
 app.use(express.json())
 
 app.use((  req,res,next ) => {

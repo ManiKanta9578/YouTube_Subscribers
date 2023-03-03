@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+//schema
 const Schema = mongoose.Schema
 //subscriber schema
 const subscriberSchema = new Schema({
